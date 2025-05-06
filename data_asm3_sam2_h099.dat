@@ -1,0 +1,28 @@
+set ASM := ASM1 ASM2 ASM3;
+set SAM_real := SAM1 SAM2;
+set SAM_artificial := SAM_art;
+
+param beta := 100;
+
+param p : SAM1  SAM2  SAM_art :=
+    ASM1    0.76    0.51    0.1
+    ASM2    0.61    0.59    0.1
+    ASM3    0.79    0.77    0.1
+;
+
+param d :=
+    SAM1    7
+    SAM2    3
+    SAM_art    100;
+
+param s :=
+    ASM1    4
+    ASM2    3
+    ASM3    2
+;
+
+param h :=
+    ASM1    0.99
+    ASM2    0.99
+    ASM3    0.99
+;
