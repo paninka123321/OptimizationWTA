@@ -6,6 +6,8 @@ WTA problem can be stated as the optimal allocation of existing weapons to a set
 
 An engagement process of a SAM system to an ASM can be divided into four phases. These are the tracking of the target illumination radar, the solution of the fire-control problem, the launch delay (i.e. the system delay between receiving the launch signal from the fire-control console and the missile leaving the launchers), and the flight time to the engagement.
 
+Typical WTA problem (P) is a non-linear integer-programming model and with a convex objective function is shown to be NP-complete. In the studied models, we use additional constraints and an additional product form in the objective function compared to original WTA problem. Thanks to this we eliminate the non-linearity from the models making problem easier to solve.
+
 ## Assumptions
 The basic assumptions that are needed for models are:
 * The TG sees all the air threats to intercept simultaneously. Thus, we investigate the case where the attack size is known.
@@ -29,3 +31,6 @@ Parameters of models:
 * s_i - the maximum number of engagements that can be done against ASM i using a SLS tactic. This parameter will
 be discussed in detail after the model presentation.
 
+## Problem formulation
+The orginal non-linear WTA problem, that is NP-complete:
+(P) <pre> <details> <summary><strong>Mathematical Formulation (click to expand)</strong></summary> ```latex (P) max ∏_{i ∈ N} [1 − ∏_{j ∈ M, (i,j) ∈ v(i,j)} (1 − p_{ij})^{x_{ij}}] subject to: ∑_{i ∈ N, (i,j) ∈ v(i,j)} x_{ij} ≤ d_j, ∀ j ∈ M ∑_{j ∈ M, (i,j) ∈ v(i,j)} x_{ij} ≤ s_i, ∀ i ∈ N 0 ≤ x_{ij} ≤ u_{ij}, ∀ (i,j) ∈ v(i,j) x_{ij} ∈ ℤ ``` </details> </pre> 
