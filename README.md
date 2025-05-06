@@ -33,4 +33,4 @@ be discussed in detail after the model presentation.
 
 ## Problem formulation
 The orginal non-linear WTA problem, that is NP-complete:
-(P) <pre> <details> <summary><strong>Mathematical Formulation (click to expand)</strong></summary> ```latex (P) max ∏_{i ∈ N} [1 − ∏_{j ∈ M, (i,j) ∈ v(i,j)} (1 − p_{ij})^{x_{ij}}] subject to: ∑_{i ∈ N, (i,j) ∈ v(i,j)} x_{ij} ≤ d_j, ∀ j ∈ M ∑_{j ∈ M, (i,j) ∈ v(i,j)} x_{ij} ≤ s_i, ∀ i ∈ N 0 ≤ x_{ij} ≤ u_{ij}, ∀ (i,j) ∈ v(i,j) x_{ij} ∈ ℤ ``` </details> </pre> 
+(P) <pre> <details> <summary><strong>Mathematical Formulation (click to expand)</strong></summary> ![WTA NP-problem](https://github.com/user-attachments/assets/ff16fe17-29ef-450b-9f2f-777e4f79cb18)
