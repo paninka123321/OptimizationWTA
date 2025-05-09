@@ -57,7 +57,7 @@ def write_data_file(n_asm, n_sam, h=0.99, beta=100, seed=None):
     filename = f"data_p1_asm{n_asm}_sam{n_sam}_h{str(h).replace('.', '')}.dat"
     with open(filename, "w") as f:
         f.write(data)
-    print(f"✅ Data file written to: {filename}")
+    print(f" Data file written to: {filename}")
 
 
 # Example
