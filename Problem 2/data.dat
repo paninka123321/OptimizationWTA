@@ -1,0 +1,33 @@
+set N := 1 2 3;
+set M := A B;
+set V := 
+    1 A
+    1 B
+    2 A
+    3 B;
+
+param a :=
+    [1,A] 9.2   # Increased effectiveness of SAM1 → ASM1 (probability of success)
+    [1,B] 20.1   # Increased effectiveness of SAM1 → ASM2
+    [2,A] 1.4   # Increased effectiveness of SAM2 → ASM1
+    [3,B] 1.3;  # Increased effectiveness of SAM3 → ASM2
+
+param b :=
+    1 1.05   # Relaxed protection threshold for ASM1
+    2 1.2    # Relaxed protection threshold for ASM2
+    3 1.15;  # Relaxed protection threshold for ASM3
+
+param d :=
+    A 50    # Increased capacity for SAM1
+    B 6;   # Increased capacity for SAM2
+
+param s :=
+    1 5     # Increased engagement limit for ASM1
+    2 5     # Increased engagement limit for ASM2
+    3 5;    # Increased engagement limit for ASM3
+
+param u :=
+    [1,A] 10   # Increased missile limit for SAM1 → ASM1
+    [1,B] 4   # Increased missile limit for SAM1 → ASM2
+    [2,A] 5   # Increased missile limit for SAM2 → ASM1
+    [3,B] 5;  # Increased missile limit for SAM3 → ASM2

@@ -1,0 +1,8 @@
+
+
+option solver gurobi;
+solve;
+
+display x, e;
+display N, M, V;
+display a, b, d, s, u;
