@@ -35,3 +35,5 @@ be discussed in detail after the model presentation.
 ## Problem formulation
 The orginal non-linear WTA problem, that is NP-complete:
 (P) <pre> <details> <summary><strong>Mathematical Formulation of WTA NP-probelm (P) (click to expand)</strong></summary> ![WTA NP-problem](https://github.com/user-attachments/assets/ff16fe17-29ef-450b-9f2f-777e4f79cb18)
+
+* xij : whether we launch missiles of SAM system j against ASM i or not 1 = true, 0 = false, (i, j ) ∈ v(i, j ).
